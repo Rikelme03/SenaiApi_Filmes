@@ -77,8 +77,7 @@ namespace api_filmes_senai.Repositories
                 _context.SaveChanges();
             }
             catch (Exception)
-            {
-
+            { 
                 throw;
             }
         }
@@ -101,6 +100,39 @@ namespace api_filmes_senai.Repositories
 
                 throw;
             }
+        }
+
+        public List<Filme> GetActionGenero(Guid idGenero)
+        {
+            return _context.Filmes.Where(f => f.IdGenero == idGenero).ToList();
+        }
+
+
+       
+
+        
+        public List<Filme> ListarPorGenero(Guid idGenero)
+        {
+
+            try
+            {
+                List<Filme> listaDeFilmes = _context.Filmes
+                    .Include(g => g.Genero)
+                    .Where(f => f.IdGenero == idGenero)
+                    .ToList();
+                    return listaDeFilmes;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
+        public List<Filme> listaDeFilmePorGenero(Guid idGenero)
+        {
+            throw new NotImplementedException();
         }
     }
 }
