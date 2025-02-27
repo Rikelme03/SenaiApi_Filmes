@@ -1,7 +1,7 @@
 <h1>🎥 Projeto Api_Filmes <h1/> 
 
-🎬 Sobre o Projeto
-Este projeto tem como objetivo fornecer uma plataforma para explorar informações sobre filmes, incluindo títulos. Ele pode ser utilizado para pesquisa e recomendações. 😁
+<p>🎬 Sobre o Projeto
+Este projeto tem como objetivo fornecer uma plataforma para explorar informações sobre filmes, incluindo títulos. Ele pode ser utilizado para pesquisa e recomendações. 😁<p/>
 
 📦 Como Executar o Projeto
 
